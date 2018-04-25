@@ -1,0 +1,199 @@
+<html lang="en">
+	<head>
+		<title>Log In</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="This is an online tutoring system for PSU">
+		<meta name="keywords" content="tutor, course, instructor">
+		<meta name="author" content="Zara">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<style>
+			body{
+				margin: auto;
+			}
+			.myDiv {
+			}
+			.myDiv .bg {
+				position: absolute;
+				z-index: -1;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background: url(books.jpg) center center;
+				background-repeat: no-repeat;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				opacity: .2;
+				width: 100%;
+				height: auto;
+			}
+			
+			img{
+				float: left;
+			}
+			.text{
+				margin: 50;
+			}
+			table{
+				margin-top: 0;
+			}
+			.navbar {
+					margin-bottom: 0;
+					background-color:#14406e;
+					z-index: 9999;
+					border: 0;
+					font-size: 12px !important;
+					line-height: 2 !important;
+					letter-spacing: 2px;
+					border-radius: 0;
+				}
+				.navbar li a, .navbar .navbar-brand {
+					color: #fff !important;
+				}
+				.navbar-nav li a:hover, .navbar-nav li.active a {
+					color: #1091b9 !important;
+					background-color: #fff !important;
+				}
+				.navbar-default .navbar-toggle {
+					border-color: transparent;
+					color: #fff !important;
+				}
+				.header {
+					background-color: #fff;
+					color: #1091b9;
+					font-family: "Times New Roman", Georgia, Serif;
+					padding: 25px 10px;
+				}
+				#image1{
+					margin-left:25px;
+					width:250px;
+					height:250px;
+					float:left;
+				}
+				.header h1{
+					margin-top:80px;
+					font-size: 50px
+				}
+				#white-earphone #white-phone #white-envelope #white-info-sign{
+					color: white;
+	   
+				}
+			
+				.PSUWebsite ul {
+					list-style-type: none;
+					margin: 0;
+					padding: 0;
+					overflow: hidden;
+					
+				}
+				.PSUWebsite li {
+					float: left;
+				}
+				.PSUWebsite li a {
+					display: block;
+					color: white;
+					text-align: center;
+					padding: 14px 16px;
+					text-decoration: none;
+				}
+				.pageWidth{ 
+					margin-left: auto; 
+					margin-right:auto; 
+					margin-top:0; 
+					margin-bottom:0;
+				}
+				.center {
+					display: block;
+					margin-left: auto;
+					margin-right: auto;
+					width: 50%;
+				}
+		
+		</style>
+	</head>
+	<body>
+		<!-- header -->
+		<div class="container-fluid">
+				<div class="header jumbotron">
+					<img id="image1" src="Images/tutoring-center-sign.png" alt="tutoring-center-sign">
+					<h1>Welcome to the PSU Online Tutoring System!</h1>
+					<p>The first ever effective way to sign up for your tutoring classes at PSU.</p>
+				</div>
+			</div>
+			
+			<nav class="navbar navbar-default pageWidth">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>                        
+						</button>
+					<a class="navbar-brand" href="index.html">Tutoring Center</a>
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="aboutus.html">About Us</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="signup.html"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+							<li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<br>
+	
+		<div class="myDiv">
+			<div class="bg"></div>
+			
+			<div class="text">
+				<h2>Welcome</h2>
+				<hr>
+				
+				<h1>Log In</h1>
+					<p>Log into your account.</p>
+					
+				<p>Whether you are in need of a tutor for extra help or are looking for some way to 
+				help a friend and make some money, PSU Tutoring Center is here to help!</p>
+				
+					
+						
+					<form method = "post" action="login.php">
+						<div class = "input-group">
+							<label>Username</label>
+							<input type = "text" name = "username">
+						</div>
+						<div class = "input-group">
+							<label>Password</label>
+							<input type = "password" name = "password_1">
+						</div>
+						<div class = "input-group">
+							<button type = "submit" name = "login" class="btn">Login</button>
+						</div>
+						
+						<p>
+							Not yet a member? <a href="resgister.php">Sign up</a>
+						</p>
+					
+                            
+						
+					<div class="clearfix">
+						<button type="button" style="background-color: #14406e; border: none; color: white;
+						padding: 5px 5px; text-align: center; text-decoration: none; display: inline-block;
+						font-size: 16px;" class="cancelbtn">Cancel</button>
+						<button type="submit" style="background-color: #14406e; border: none; color: white;
+						padding: 5px 5px; text-align: center; text-decoration: none; display: inline-block;
+						font-size: 16px;" class="loginbtn">Log In</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
